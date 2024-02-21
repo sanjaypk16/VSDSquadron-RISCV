@@ -25,11 +25,11 @@ For more details of company  visit [Company's Website](https://www.vlsisystemdes
 
 This repository is mainly for documentation of all the progress
 ## Progress Report  
-### The first online meet was held on 16th of Feb 2024 @6PM
+### 1st Meeting - The first online meet was held on 16th of Feb 2024 @6PM
 Description:KunaL Ghosh sir gave brief introduction of the program and steps to be followed for software installation.
 Based on the internship type different task were assigned. 
 
-TASK 1  
+TASKS   
 1.install Yosys
 
 2.install iverilog
@@ -69,6 +69,9 @@ For installing GTkWave
 
 
 
-![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)
+![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)  
 
+
+### 2nd Meeting - The second online meet was held on 20th of Feb 2024 @6PM
+Description:Kunal Ghosh sir told 
 
