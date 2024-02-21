@@ -71,7 +71,41 @@ For installing GTkWave
 
 ![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)  
 
-
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 2nd Meeting - The second online meet was held on 20th of Feb 2024 @6PM
-Description:Kunal Ghosh sir told 
+Description:Kunal Ghosh sir told to get ready with block diagram and identify input ports, input waveforms, output ports and output waveforms.
+
+Tasks  
+1.To create a block diagram of the respective project  
+2.To identify input ports, input waveforms, output ports and output waveforms  
+
+### Synchronous First in First Out for Memory Storage and Processing  
+
+
+
+**Introduction**: 
+
+Synchronous First In First Out (FIFO) is a fundamental data storage and processing mechanism widely employed in digital systems to manage the orderly flow of data. It ensures that data is processed in the same sequence it was received, making it essential for applications where timing and order are critical.  
+
+**Applications**:  
+
+1.**Communication Interfaces:** Synchronous FIFOs are vital in communication protocols like UART and SPI, buffering data between devices with different clock domains to ensure synchronized data transfer.
+
+2.**Digital Signal Processing (DSP):** In DSP applications, synchronous FIFOs manage data flow between processing stages, maintaining the sequence integrity necessary for accurate signal processing.
+
+3.**Memory Interfaces:** They serve as interfaces between memory modules operating at varying speeds or utilizing different protocols, facilitating efficient data transfer and access while preserving order.  
+
+
+
+**Block Diagram**  
+
+
+![Screenshot 2024-02-21 122403](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/3ca5d650-26bc-4399-8534-2ef3ddd62adf)  
+
+
+
+**Input and Output Waveform**  
+
+![Screenshot 2024-02-21 163150](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/de40420d-b299-4f51-9b56-24febd6b817b)
+
 
