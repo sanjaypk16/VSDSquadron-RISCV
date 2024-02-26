@@ -10,7 +10,7 @@ module synchronous_fifo_tb;
     wire full;      // Full flag
 
     // Instantiate the FIFO
-    synchronous_fifo #(.DEPTH(8)) fifo (
+    synchronous_fifo uut(.DEPTH(8)) fifo (
         .clk(clk),
         .rst(rst),
         .wr_en(wr_en),
