@@ -1,4 +1,4 @@
-module synchronous_fifo #(
+module synchronous_fifo(
     parameter DEPTH = 8  // Depth of the FIFO
 )(
     input wire clk,      // Clock input
