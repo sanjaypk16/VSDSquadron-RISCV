@@ -108,4 +108,46 @@ Synchronous First In First Out (FIFO) is a fundamental data storage and processi
 
 ![Screenshot 2024-02-21 163150](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/de40420d-b299-4f51-9b56-24febd6b817b)
 
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 3rd Meeting - The third online meet was held on 22th of Feb 2024 @6PM
+Description: Kunar Ghosh sir told to know about gtkwave,iverilog and generate waveform.
 
+Tasks  
+1.To know about gtkwave and iverilog  
+2.To generate waveform
+
+**GTKWave**  
+GTKWave is a waveform viewer for Verilog simulation results, enabling visualization of signals over time. 
+
+**iverilog**  
+Icarus Verilog (iverilog) is a free Verilog simulation and synthesis tool, useful for compiling and simulating Verilog designs, often paired with GTKWave for waveform viewing.
+
+### **Steps to generate waveform using gtkwave and iverilog** ###
+
+1.Cloning my gitub repository  
+``git clone https://github.com/sanjaypk16/VSDSquadron-RISCV.git`` 
+
+![cdf9b376-a41c-442d-9ec2-f85d6abde981](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/429e947e-61da-48c8-971f-385e5657378b)  
+
+
+2.Simulating iverilog  
+``cd VSDSquadron-RISCV/``            where **VSDSquadron-RISCV/** is my repository  
+
+
+``iverilog fifo.v fifo_tb.v``  
+
+Generating dump file  
+``./a.out``  
+
+
+![da5fbdcf-4572-439b-b055-2ff41c979ac9](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/aa4d6a5b-4a05-46c8-9c26-ae803aa340f5)  
+
+
+ 3.To get waveform  
+ ```gtkwave dump.vcd```  
+
+ 
+### **Waveform** ### 
+
+
+![9cc351bd-dac8-4cec-bc4d-1606087ce8b5](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d4d3ad9d-dbf7-484a-9567-22b26f7ab367)
