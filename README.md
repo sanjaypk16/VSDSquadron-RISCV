@@ -147,7 +147,7 @@ Generating dump file
  ```gtkwave dump.vcd```  
 
  
-### **Waveform** ##3
+### **Waveform** ###
 
 
 ![9cc351bd-dac8-4cec-bc4d-1606087ce8b5](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d4d3ad9d-dbf7-484a-9567-22b26f7ab367)
