@@ -1,59 +1,53 @@
-module synchronous_fifo_tb;
 
-    reg clk;        // Clock
-    reg rst;        // Reset
-    reg wr_en;      // Write enable
-    reg rd_en;      // Read enable
-    reg [7:0] data_in;  // Input data
-    wire [7:0] data_out; // Output data
-    wire empty;     // Empty flag
-    wire full;      // Full flag
+`timescale 1 ns/ 1 ps
+module iiitb_sfifo(
+	input        CLK,
+	input        RSTn,
+	input        write,
+	input        read,
+	input  [7:0] iData,
+	
+	output [7:0] oData,
+	output       full,
+	output       empty
+);
 
-    // Instantiate the FIFO
-    synchronous_fifo uut(.DEPTH(8)) fifo (
-        .clk(clk),
-        .rst(rst),
-        .wr_en(wr_en),
-        .rd_en(rd_en),
-        .data_in(data_in),
-        .data_out(data_out),
-        .empty(empty),
-        .full(full)
-    );
+reg [4:0] wp;          //write point should add 1 bit(N+1) 
+reg [4:0] rp;          //read point
+reg [7:0] RAM [15:0];  //deep16,8 bit RAM
+reg [7:0] oData_reg;   //regsiter of oData
 
-    // Clock generation
-    always #5 clk = ~clk;
+always @ ( posedge CLK or negedge RSTn )
+begin                  //write to RAM
+	if (!RSTn)
+	begin
+		wp <= 5'b0;
+	end
+	else if ( write )
+	begin
+		RAM[wp[3:0]] <= iData;
+		wp <= wp + 1'b1;
+	end
+end
 
-    // Testbench initialization
-    initial begin
-        $dumpfile("dump.vcd"); // Specify VCD file name
-        $dumpvars(0, synchronous_fifo_tb); // Dump all variables
+always @ ( posedge CLK or negedge RSTn )
+begin                  // read from RAM
+	if (!RSTn)
+	begin
+		rp <= 5'b0;
+		oData_reg <= 8'b0;
+	end
+	else if ( read  )
+	begin
+		oData_reg <= RAM[rp[3:0]];
+		rp <= rp + 1'b1;
+	end
+end
 
-        clk = 0;
-        rst = 1;
-        wr_en = 0;
-        rd_en = 0;
-        data_in = 8'h00;
 
-        // Release reset after 10 time units
-        #10 rst = 0;
+assign full = ( wp[4] ^ rp[4] & wp[3:0] == rp[3:0] );
+assign empty = ( wp == rp );
+assign oData = oData_reg;
 
-        // Write data into FIFO
-        #20 data_in = 8'hAA; wr_en = 1;
-        #30 data_in = 8'hBB; wr_en = 1;
-        #40 data_in = 8'hCC; wr_en = 1;
-        #50 data_in = 8'hDD; wr_en = 1;
-        #60 wr_en = 0;
-
-        // Read data from FIFO
-        #70 rd_en = 1;
-        #80 rd_en = 1;
-        #90 rd_en = 1;
-        #100 rd_en = 1;
-        #110 rd_en = 0;
-
-        // Finish simulation after some delay
-        #120 $finish;
-    end
 
 endmodule
