@@ -1,45 +1,78 @@
-module synchronous_fifo(
-    parameter DEPTH = 8  // Depth of the FIFO
-)(
-    input wire clk,      // Clock input
-    input wire rst,      // Reset input
-    input wire wr_en,    // Write enable
-    input wire rd_en,    // Read enable
-    input wire [7:0] data_in,  // Input data
-    output reg [7:0] data_out, // Output data
-    output reg empty,    // Empty flag
-    output reg full      // Full flag
-);
 
-// Internal memory for data storage
-reg [7:0] mem [0:DEPTH-1];
+`timescale 1 ns/ 1 ps
+module iiitb_sfifo_tb();
+	reg CLK;
+	reg RSTn;
+	reg write;
+	reg read;
+	reg [7:0] iData;
+	
+	wire [7:0] oData;
+	wire full;
+	wire empty;
 
-// Pointers for read and write operations
-reg [2:0] wr_ptr, rd_ptr;
-
-// Empty and Full flag logic
-assign empty = (wr_ptr == rd_ptr);
-assign full = ((wr_ptr + 1) % DEPTH == rd_ptr);
-
-// Write operation
-always @(posedge clk) begin
-    if (rst) begin
-        wr_ptr <= 0;
-    end else if (wr_en && !full) begin
-        mem[wr_ptr] <= data_in;
-        wr_ptr <= (wr_ptr + 1) % DEPTH;
-    end
+initial
+begin
+	read=0;
+	write=0;
+end
+initial
+begin
+	CLK <= 1'b0;
+	forever #100 CLK <= ~CLK;
 end
 
-// Read operation
-always @(posedge clk) begin
-    if (rst) begin
-        rd_ptr <= 0;
-        data_out <= 8'h00;
-    end else if (rd_en && !empty) begin
-        data_out <= mem[rd_ptr];
-        rd_ptr <= (rd_ptr + 1) % DEPTH;
-    end
+
+initial 
+begin
+	RSTn = 0;
+	iData = 0;
+	#10 RSTn = 1;
+end
+	
+always @ (posedge CLK or negedge RSTn)
+begin
+	iData <= iData + 1'b1;
+				  
 end
 
+always @ (posedge CLK or negedge RSTn)
+begin
+	if (!RSTn)
+		write = 0;
+	else if (!full)
+	begin
+		write = 1;
+	end
+	else 
+		write = 0;
+end
+
+always @ (posedge CLK or negedge RSTn)
+begin
+	if (!RSTn)
+		read = 0;
+	else if (!empty)
+		read = 1;
+	else 
+		read = 0;
+end
+
+
+iiitb_sfifo fifo (.CLK(CLK),
+				  .RSTn(RSTn),
+				  .write(write),
+				  .read(read),
+				  .iData(iData),
+				  .full(full),
+				  .empty(empty),
+				  .oData(oData));
+
+  initial begin
+    $dumpfile("dump.vcd");
+    $dumpvars;
+  end
+  initial
+  #20000 $finish;
+             
 endmodule
