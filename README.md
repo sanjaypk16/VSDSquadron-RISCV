@@ -177,9 +177,6 @@ Generating dump file
 
 ![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e17bcd15-ed27-4fc7-95f1-c0b67e69e428)   
 
-
-![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/09d73569-c2b4-4b3f-8274-8014a62b279f)   
-
 ![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b429fb81-7bbb-41a5-a5bb-c011e237f122)
 
 
