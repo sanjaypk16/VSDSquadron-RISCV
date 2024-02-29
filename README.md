@@ -144,10 +144,43 @@ Generating dump file
 
 
  3.To get waveform  
- ```gtkwave dump.vcd```  
-
+ ```gtkwave dump.vcd``` 
  
 ### **Waveform** ###
 
 
-![9cc351bd-dac8-4cec-bc4d-1606087ce8b5](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d4d3ad9d-dbf7-484a-9567-22b26f7ab367)
+![9cc351bd-dac8-4cec-bc4d-1606087ce8b5](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d4d3ad9d-dbf7-484a-9567-22b26f7ab367)  
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
+### 4th Meeting - The third online meet was held on 27th of Feb 2024 @6PM  
+
+
+![f2006829-e78e-407f-82fa-125f8de42fd8](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/8f31a13f-47bc-4f97-80f6-579c0e905587)  
+
+
+![d021e2d4-3ee5-4839-8d03-74615e141f4a](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/10376762-de3b-4b51-b7ea-729c083c9243)  
+
+
+
+![c5bcb653-1df3-4d9c-b199-8b2356552778](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e41a008c-1493-4077-8918-a395d0ce97ac)
+
+
+![4417c12b-4db5-431d-96d8-1c6ee5f506b9](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/9b983fc8-e950-4fa8-a228-82c704e6f8aa)  
+
+
+![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d590c6ac-b833-4298-bd61-b19f3a1911c9)
+
+ 
+
+![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/3b47af5a-788c-450c-8971-46790fb05ad6)
+
+
+![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e17bcd15-ed27-4fc7-95f1-c0b67e69e428)   
+
+
+![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/09d73569-c2b4-4b3f-8274-8014a62b279f)   
+
+![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b429fb81-7bbb-41a5-a5bb-c011e237f122)
+
+
+
