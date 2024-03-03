@@ -26,7 +26,11 @@ For more details of company  visit [Company's Website](https://www.vlsisystemdes
 This repository is mainly for documentation of all the progress
 ## Progress Report  
 ### 1st Meeting - The first online meet was held on 16th of Feb 2024 @6PM
-Description:KunaL Ghosh sir gave brief introduction of the program and steps to be followed for software installation.
+Description:Steps to be followed for software installation.
+
+<details>
+    <summary> TASK 1 </summary>
+
 Based on the internship type different task were assigned. 
 
 TASKS   
@@ -69,12 +73,16 @@ For installing GTkWave
 
 
 
-![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)  
+![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)    
+
+</details>
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 2nd Meeting - The second online meet was held on 20th of Feb 2024 @6PM
-Description:Kunal Ghosh sir told to get ready with block diagram and identify input ports, input waveforms, output ports and output waveforms.
+Description: Block diagram and identify input ports, input waveforms, output ports and output waveforms.  
 
+<details>
+    <summary> TASK 2 </summary>
 Tasks  
 1.To create a block diagram of the respective project  
 2.To identify input ports, input waveforms, output ports and output waveforms  
@@ -106,14 +114,18 @@ Synchronous First In First Out (FIFO) is a fundamental data storage and processi
 
 **Input and Output Waveform**  
 
-![Screenshot 2024-02-21 163150](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/de40420d-b299-4f51-9b56-24febd6b817b)
+![Screenshot 2024-02-21 163150](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/de40420d-b299-4f51-9b56-24febd6b817b)  
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 3rd Meeting - The third online meet was held on 22th of Feb 2024 @6PM
-Description: Kunar Ghosh sir told to know about gtkwave,iverilog and generate waveform.
+</details>  
 
+----------------------------------------------------------------------------------  
+### 3rd Meeting - The third online meet was held on 22nd of Feb 2024 @6PM
+Description: To know about gtkwave, Verilog and generate the waveform.
+<details>
+    <summary> TASK 3 </summary>
 Tasks  
-1.To know about gtkwave and iverilog  
+1.To know about gtkwave and iverilog   
+ 
 2.To generate waveform
 
 **GTKWave**  
@@ -148,36 +160,72 @@ Generating dump file
  
 ### **Waveform** ###
 
+![Screenshot from 2024-03-01 15-01-23](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/4661a5e2-73aa-4186-83f9-4937442d9716)
 
-![9cc351bd-dac8-4cec-bc4d-1606087ce8b5](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d4d3ad9d-dbf7-484a-9567-22b26f7ab367)  
+
+
+
+</details>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-### 4th Meeting - The third online meet was held on 27th of Feb 2024 @6PM  
+### 4th Meeting - The third online meet was held on 27th of Feb 2024 @6PM    
+
+Description: Generating the waveform with the actual code and with netlist. Verifying both the waveform
+
+<details>
+    <summary> TASK 4 </summary>  
 
 
-![f2006829-e78e-407f-82fa-125f8de42fd8](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/8f31a13f-47bc-4f97-80f6-579c0e905587)  
+  
+**To invoke yosys**   
+
+```yosys```  
+where VSDSquadron-RISCV is my folder  
+
+**To read the library** 
+
+``read_liberty -lib ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib`` 
+
+![Screenshot from 2024-03-03 15-54-54](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/a22bab78-9126-482c-b4da-3cd626f8732e)
 
 
-![d021e2d4-3ee5-4839-8d03-74615e141f4a](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/10376762-de3b-4b51-b7ea-729c083c9243)  
+
+**Reading the design**
 
 
+```read_verilog fifo.v```  
 
-![c5bcb653-1df3-4d9c-b199-8b2356552778](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e41a008c-1493-4077-8918-a395d0ce97ac)
-
-
-![4417c12b-4db5-431d-96d8-1c6ee5f506b9](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/9b983fc8-e950-4fa8-a228-82c704e6f8aa)  
+where fifo is the module name of the design code
 
 
-![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d590c6ac-b833-4298-bd61-b19f3a1911c9)
+![Screenshot from 2024-03-03 16-19-19](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d00059ea-d239-4f89-8ba9-2b332462e579)
 
- 
 
-![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/3b47af5a-788c-450c-8971-46790fb05ad6)
+**Synthesizing the module**
+
+``` synth -top fifo ```    
+
+where fifo is the module name of the design code 
+
+![Screenshot from 2024-03-01 15-31-52](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/39076a93-6fb9-4a12-9478-ae991c44c4ce)
+
+
+![Screenshot from 2024-03-01 15-32-49](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b4923249-0237-4c7e-8a3e-87b184ab82bb)
+
+
+![Screenshot from 2024-03-01 15-33-20](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b06d9f62-de86-4e22-865b-fabe9512a931)
+
+
+```show```
+
+![Screenshot from 2024-02-29 15-57-21 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d61a603e-757a-4c9c-8424-bf758bbd59c1)
+
+
 
 
 ![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e17bcd15-ed27-4fc7-95f1-c0b67e69e428)   
 
-![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b429fb81-7bbb-41a5-a5bb-c011e237f122)
 
 
+</details>
 
