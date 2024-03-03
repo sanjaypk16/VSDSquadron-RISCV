@@ -1,6 +1,6 @@
 
 `timescale 1 ns/ 1 ps
-module iiitb_sfifo_tb();
+module fifo_tb();
 	reg CLK;
 	reg RSTn;
 	reg write;
@@ -59,7 +59,7 @@ begin
 end
 
 
-iiitb_sfifo fifo (.CLK(CLK),
+fifo uut(.CLK(CLK),
 				  .RSTn(RSTn),
 				  .write(write),
 				  .read(read),
@@ -73,6 +73,6 @@ iiitb_sfifo fifo (.CLK(CLK),
     $dumpvars;
   end
   initial
-  #20000 $finish;
+  #2000 $finish;
              
 endmodule
