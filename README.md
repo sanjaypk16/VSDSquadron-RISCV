@@ -248,13 +248,42 @@ where fifo is the module name of the design code
 
 
 
+```show```  
+
+**To open the netlist**  
+
+
+```!gvim vend_netlist1.v```  
+
+
+
 ![Screenshot from 2024-03-01 23-16-48](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/fb834e4b-3b4c-4eae-bec4-271590d46e40)
 
 
+**Opening the netlist file**   
+
+![Screenshot from 2024-03-01 16-12-07](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/2336072f-7770-454e-b497-d3f6ae3d609c)  
 
 
-![Screenshot from 2024-03-01 21-21-05](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/5b335ece-5e80-493a-bb70-aa45b70c6119)
+![Screenshot from 2024-03-01 16-12-54](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/bd3bda71-8865-4c7a-8b2a-8e8225a20724)   
 
+
+**To verify whether netlist will match with the design**  
+
+```iverilog netlist1.v fifo_tb.v```   
+
+```./a.out```  
+
+``` gtkwave dumpfile.vcd```
+
+
+
+![Screenshot from 2024-03-01 21-21-05](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/5b335ece-5e80-493a-bb70-aa45b70c6119)  
+
+Waveform obtained from netlist  
+
+
+![Screenshot from 2024-03-01 21-20-29](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/fc256c82-0cba-4b68-8b00-39df499425e0)
 
 </details>
 
