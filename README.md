@@ -225,10 +225,35 @@ where fifo is the module name of the design code
 ![Screenshot from 2024-02-29 15-57-21 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/d61a603e-757a-4c9c-8424-bf758bbd59c1)
 
 
+**To generate netlist**  
 
+``` abc -liberty ../../sky130RTLDesignAndSynthesisWorkshop/lib/sky130_fd_sc_hd__tt_025C_1v80.lib```
 
 ![unnamed](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e17bcd15-ed27-4fc7-95f1-c0b67e69e428)   
 
+**To write the netlist**  
+`` write_verilog fifo_netlist.v`` 
+
+
+
+-noattr is used to get simplified version of netlist file  
+
+``` write_verilog -noattr fifo_netlist1.v```  
+
+
+```flatten```
+``` 
+
+![Screenshot from 2024-03-01 23-16-16](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/3e2c346f-3331-42e2-843d-67708227bff4)
+
+
+
+![Screenshot from 2024-03-01 23-16-48](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/fb834e4b-3b4c-4eae-bec4-271590d46e40)
+
+
+
+
+![Screenshot from 2024-03-01 21-21-05](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/5b335ece-5e80-493a-bb70-aa45b70c6119)
 
 
 </details>
