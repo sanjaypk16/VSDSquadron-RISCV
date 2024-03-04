@@ -292,7 +292,7 @@ Waveform obtained from netlist
 
 ### 5th task - The fifth task  was given on 1st of March 2024  
 
-Description:  
+Description:  To simulate the waveform with the given design code and netlist.  
 
 
 
@@ -365,10 +365,58 @@ invoking yosys inside iiitb_sfifo folder
 
 **To write the netlist**  
 
-```write_verilog netlist.v```  
+```write_verilog netlist.v``` 
 
+
+```write_verilog -noattr netlist.v```  
+
+where -noattr is used to get simplified netlist file.
  
 ![Screenshot from 2024-03-01 23-07-23](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e4de74e2-4dcd-45db-9812-ae7e2af665db)
 
+```flatten```  
 
+```show```  
+
+
+![Screenshot from 2024-03-01 23-08-23](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/9c34ef6d-f59a-41a4-b314-0c2d36d8dbbb)  
+
+
+![Screenshot from 2024-03-03 16-50-52](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/2f6de39c-60dd-4097-b2b3-61fc79ad750c)
+
+**To open netlist**   
+
+```!gvim netlist.v```
+
+![Screenshot from 2024-03-01 23-09-18](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/edcd67f6-12fe-46d4-a9bc-2a68f9b9153c)  
+
+
+**Opening the netlist file**  
+
+![Screenshot from 2024-03-02 09-11-37 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/12d1ac8f-0c01-40a4-a9ca-a1eadb049392)
+
+
+
+**To verify whether netlist will match with the design**  
+
+```iverilog ../iiitb_sfifo/verilog_model/primitives.v ../iiitb_sfifo/verilog_model/sky130_fd_sc_hd.v netlist.v iiitb_sfifo_tb.v```
+
+
+![Screenshot from 2024-03-01 23-10-31](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/a9d48730-47bb-47eb-967c-b92bbe9105f6)  
+
+
+
+ 
+```./a.out```  
+
+```gtkwave dump.vcd```  
+
+
+
+![Screenshot from 2024-03-01 23-11-17](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/f11ffb6c-75b0-49d6-a236-310e1b6597a5)
+
+
+
+
+![Screenshot from 2024-03-01 22-07-38](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/4ef4d768-1d9f-463d-8687-27eef200069c)
 
