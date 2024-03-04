@@ -242,7 +242,7 @@ where fifo is the module name of the design code
 
 
 ```flatten```
-``` 
+
 
 ![Screenshot from 2024-03-01 23-16-16](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/3e2c346f-3331-42e2-843d-67708227bff4)
 
