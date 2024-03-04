@@ -172,7 +172,7 @@ Generating dump file
 </details>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
-### 4th Meeting - The third online meet was held on 27th of Feb 2024 @6PM    
+### 4th Meeting - The fourth online meet was held on 27th of Feb 2024 @6PM    
 
 Description: Generating the waveform with the actual code and with netlist. Verifying both the waveform
 
@@ -286,4 +286,78 @@ Waveform obtained from netlist
 ![Screenshot from 2024-03-01 21-20-29](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/fc256c82-0cba-4b68-8b00-39df499425e0)
 
 </details>
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------  
+
+### 5th task - The fifth task  was given on 1st of March 2024  
+
+Description:  
+
+
+
+<details>
+    <summary> TASK 5 </summary>  
+
+
+**Cloning  gitub repository**    
+
+```git clone https://github.com/Anmol-S314/iiitb_sfifo.git```  
+
+```iverilog iiitb_sfifo.v iiitb_sfifo_tb.v```  
+
+```gtkwave iiitb dump.vcd```  
+
+
+![Screenshot from 2024-03-01 21-36-24](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/60ee2035-bac4-4d50-9a0f-9c378ebd3100)  
+
+waveform  
+
+
+![Screenshot from 2024-03-01 21-35-47](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/b172661a-834e-4b7d-b7f2-6378574757fe)  
+
+
+**To generate netlist**  
+
+invoking yosys inside iiitb_sfifo folder  
+
+```yosys```  
+
+
+
+![Screenshot from 2024-03-01 23-00-15](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/58afdd06-3497-42dc-b789-a9a928d7ac09)
+
+
+**Reading the library**  
+
+
+
+![Screenshot from 2024-03-01 23-00-59](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/f9a87425-44b6-4a24-95d0-542a3ab21f91)
+
+**Reading the design**  
+
+
+```read_verilog iiitb_sfifo.v```  
+
+**Synthesizing the module**
+
+```synth -top iiitb_sfifo```
+
+
+![Screenshot from 2024-03-01 23-01-46](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/5378aa48-4406-4eeb-988e-f7f679935fd7)  
+
+
+
+![Screenshot from 2024-03-01 23-04-51](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/5bc0af67-7b7d-4ce3-8a93-739adf79468e)   
+
+
+**To generate the nestlist**  
+
+
+
+
+
+
+
+
 
