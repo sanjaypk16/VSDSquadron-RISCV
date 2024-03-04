@@ -354,10 +354,21 @@ invoking yosys inside iiitb_sfifo folder
 **To generate the nestlist**  
 
 
+```abc -liberty /home/sanjaypk/VSDSquadron-RISCV/iiitb_sfifo/lib/sky130_fd_sc_hd_tt_025C_1v80.lib```  
 
 
+![Screenshot from 2024-03-01 23-05-40](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/1ab536d1-0909-4dc2-8f4e-02b105acb973)
 
 
+![Screenshot from 2024-03-01 23-06-12](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e8207ad8-23fe-4ec2-b314-66884df9d501)
+
+
+**To write the netlist**  
+
+```write_verilog netlist.v```  
+
+ 
+![Screenshot from 2024-03-01 23-07-23](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/e4de74e2-4dcd-45db-9812-ae7e2af665db)
 
 
 
