@@ -420,3 +420,4 @@ where -noattr is used to get simplified netlist file.
 
 ![Screenshot from 2024-03-01 22-07-38](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/4ef4d768-1d9f-463d-8687-27eef200069c)
 
+</details>
