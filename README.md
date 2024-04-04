@@ -32,8 +32,7 @@ This repository is mainly for documentation of all the progress
 ### 1st Meeting - The first online meet was held on 16th of Feb 2024 @6PM
 Description:Steps to be followed for software installation.
 
-<details>
-    <summary> TASK 1 </summary>
+
 
 Based on the internship type different task were assigned. 
 
@@ -79,14 +78,13 @@ For installing GTkWave
 
 ![Screenshot from 2024-02-19 23-23-02 (1)](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/226ba4c6-2f9c-479b-8186-ad90ef3878bc)    
 
-</details>
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 2nd Meeting - The second online meet was held on 20th of Feb 2024 @6PM
 Description: Block diagram and identify input ports, input waveforms, output ports and output waveforms.  
 
-<details>
-    <summary> TASK 2 </summary>
+
 Tasks  
 1.To create a block diagram of the respective project  
 2.To identify input ports, input waveforms, output ports and output waveforms  
@@ -120,13 +118,12 @@ Synchronous First In First Out (FIFO) is a fundamental data storage and processi
 
 ![Screenshot 2024-02-21 163150](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/de40420d-b299-4f51-9b56-24febd6b817b)  
 
-</details>  
+ 
 
 ----------------------------------------------------------------------------------  
 ### 3rd Meeting - The third online meet was held on 22nd of Feb 2024 @6PM
 Description: To know about gtkwave, Verilog and generate the waveform.
-<details>
-    <summary> TASK 3 </summary>
+
 Tasks  
 1.To know about gtkwave and iverilog   
  
@@ -169,15 +166,13 @@ Generating dump file
 
 
 
-</details>
+
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  
 ### 4th Meeting - The fourth online meet was held on 27th of Feb 2024 @6PM    
 
 Description: Generating the waveform with the actual code and with netlist. Verifying both the waveform
-
-<details>
-    <summary> TASK 4 </summary>  
+ 
 
 
   
@@ -285,7 +280,6 @@ Waveform obtained from netlist
 
 ![Screenshot from 2024-03-01 21-20-29](https://github.com/sanjaypk16/VSDSquadron-RISCV/assets/129313628/fc256c82-0cba-4b68-8b00-39df499425e0)
 
-</details>
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------  
@@ -295,9 +289,7 @@ Waveform obtained from netlist
 Description:  To simulate the waveform with the given design code and netlist.  
 
 
-
-<details>
-    <summary> TASK 5 </summary>  
+ 
 
 
 **Cloning  gitub repository**    
